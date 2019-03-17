@@ -1,0 +1,5 @@
+Candy 10 15 20 Nut
+Fruit 100 10 A
+Candy 15 20 25 Marmalade
+Waffle 7 25 Lemon
+Waffle 5 30 Vanilla
