@@ -12,6 +12,7 @@ public class Candy extends Sweetness{
     public Candy(int weight,int sugarPercentage, int cocoaPercentage,CandyFilling filling)
     {
         super("Candy",weight,sugarPercentage);
+        log.info("Trying to create Candy...");
         this.cocoaPercentage=cocoaPercentage;
         this.filling=filling;
         log.info("Candy was added.");

@@ -20,6 +20,7 @@ public class Gift {
         if (giftInstance == null) {
             log.info("First Initialization of Gift.");
             giftInstance = new Gift();
+            log.info("Initialization completed.");
         }
         return giftInstance;
     }
@@ -29,6 +30,8 @@ public class Gift {
     }
 
     public void setSweetnessList(List<Sweetness> sweetnessList) {
+
+        log.info("Setting new List of Sweetness's to Gift.");
         this.sweetnessList = sweetnessList;
     }
 }
