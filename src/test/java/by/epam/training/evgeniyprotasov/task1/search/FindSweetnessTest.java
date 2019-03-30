@@ -15,7 +15,7 @@ public class FindSweetnessTest {
 
     @DataProvider(name = "SweetnessFindingDataProvider")
     public Object[][] dataProvider() {
-        return new Object[][]{{candy, 10, 1}, {waffle, 5 , -1}, {fruit, 4, 1}};
+        return new Object[][]{{candy, 10, 1}, {waffle, 5, -1}, {fruit, 4, 1}};
     }
 
     //Given:
@@ -23,13 +23,11 @@ public class FindSweetnessTest {
 
 
     @Test(dataProvider = "SweetnessFindingDataProvider")
-    public void findSweetnessMethod(Sweetness sweet, int sugarPercentage, int expectedResult) {
+    public void testFindSweetness(Sweetness sweet, int sugarPercentage, int expectedResult) {
         //When:
         int result = findSweetness.findingSweetnessBySugarPercentage(sweet, sugarPercentage);
 
         //Then:
         Assert.assertEquals(result, expectedResult);
-
     }
-
 }

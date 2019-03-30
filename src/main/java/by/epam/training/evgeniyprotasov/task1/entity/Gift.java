@@ -34,4 +34,14 @@ public class Gift {
         log.info("Setting new List of Sweetness's to Gift.");
         this.sweetnessList = sweetnessList;
     }
+
+    public int getWeight()
+    {
+        int weight=0;
+        for (Sweetness sweetness:sweetnessList)
+        {
+            weight+=sweetness.getWeight();
+        }
+        return weight;
+    }
 }
